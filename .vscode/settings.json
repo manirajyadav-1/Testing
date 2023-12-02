@@ -1,0 +1,9 @@
+{
+    "java.debug.settings.onBuildFailureProceed": true,
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "vector": "cpp"
+    }
+}
