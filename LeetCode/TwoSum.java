@@ -1,12 +1,15 @@
 import java.util.Arrays;
+import java.util.HashMap;
 class TwoSum{
     public static int[] add(int[] arr,int target){
+        HashMap<Integer,Integer> hm = new HashMap<>();
+
         for(int i=0;i<arr.length;i++){
-            for(int j=i+1;j<arr.length;j++){
-                if(arr[i]+arr[j] == target){
-                    return new int[] {i,j};
-                }
+            int req_num = target-arr[i];
+            if(hm.containsKey(req_num)){
+                return new int[] {hm.get(req_num),i};
             }
+            hm.put(arr[i], i);
         }
         return new int[] {};
     }
