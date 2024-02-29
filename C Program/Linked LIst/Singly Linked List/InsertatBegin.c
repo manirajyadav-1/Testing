@@ -42,7 +42,7 @@ int main(){
     third->data = 30;
     third->next = NULL;
 
-    head = insert_at_begin(head,40);
+    head = insert_at_begin(head,60);
     printLinkedList(head);
     return 0;
 
